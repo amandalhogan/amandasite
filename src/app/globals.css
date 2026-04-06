@@ -1,3 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Goodreads widget styles */
+.gr_custom_container_1775432761 {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px 5px 10px 5px;
+  background-color: #fffefa;
+  color: #63967d;
+  width: 300px;
+}
+.gr_custom_header_1775432761 {
+  border-bottom: 1px solid gray;
+  width: 100%;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 80%;
+}
+.gr_custom_each_container_1775432761 {
+  width: 100%;
+  clear: both;
+  margin-bottom: 10px;
+  overflow: auto;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #aaa;
+}
+.gr_custom_book_container_1775432761 {
+  overflow: hidden;
+  height: 160px;
+  float: left;
+  margin-right: 4px;
+  width: 98px;
+}
+.gr_custom_author_1775432761 {
+  font-size: 10px;
+}
+.gr_custom_tags_1775432761 {
+  font-size: 10px;
+  color: gray;
+}
+.gr_custom_rating_1775432761 {
+  float: right;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23065f46' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 20l5-5 5 5'/%3E%3Cpath d='M12 15V3'/%3E%3C/svg%3E"), auto;
+  }
+  
+  /* Custom selection color (Gardener Green) */
+  ::selection {
+    background: #065f46;
+    color: white;
+  }
