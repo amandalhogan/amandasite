@@ -41,6 +41,12 @@ export default async function NasaOsdrPage() {
     <main>
       <Container>
         <article className="mb-32">
+          <a
+            href="/"
+            className="text-xs uppercase tracking-widest text-emerald-800 font-bold hover:underline"
+          >
+            ← Back to Portfolio
+          </a>
           <PostHeader
             title="NASA OSDR"
             coverImage="/assets/img/Project5_agent.jpg"

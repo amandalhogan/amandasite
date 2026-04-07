@@ -41,6 +41,12 @@ export default async function MechanicalLilyPage() {
     <main>
       <Container>
         <article className="mb-32">
+          <a
+            href="/"
+            className="text-xs uppercase tracking-widest text-emerald-800 font-bold hover:underline"
+          >
+            ← Back to Portfolio
+          </a>
           <PostHeader
             title="Mechanical Lily"
             coverImage="/assets/img/Project4_mech.png"

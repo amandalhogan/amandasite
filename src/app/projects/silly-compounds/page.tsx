@@ -37,6 +37,12 @@ export default async function SillyCompoundsPage() {
     <main>
       <Container>
         <article className="mb-32">
+          <a
+            href="/"
+            className="text-xs uppercase tracking-widest text-emerald-800 font-bold hover:underline"
+          >
+            ← Back to Portfolio
+          </a>
           <PostHeader
             title="Silly Compounds"
             coverImage="/assets/img/Project3_Silly2.png"

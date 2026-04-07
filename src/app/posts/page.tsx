@@ -7,9 +7,9 @@ export default function PostsIndex() {
 
   return (
     <main className="max-w-4xl mx-auto px-6 py-24 bg-[#fdfbf7] min-h-screen">
-      <Link href="/" className="text-xs uppercase tracking-widest text-emerald-800 font-bold hover:underline">
+      <a href="/" className="text-xs uppercase tracking-widest text-emerald-800 font-bold hover:underline">
         ← Back to Portfolio
-      </Link>
+      </a>
       
       <h1 className="text-5xl font-serif mt-12 mb-4 text-gray-900">Garden Logs</h1>
       <p className="text-gray-500 italic mb-16">Field notes on biology, space, and art.</p>

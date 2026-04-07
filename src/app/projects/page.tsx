@@ -66,6 +66,12 @@ export default function ProjectsPage() {
     <main>
       <Container>
         <section className="mb-32 pt-12">
+          <a
+            href="/"
+            className="text-xs uppercase tracking-widest text-emerald-800 font-bold hover:underline"
+          >
+            ← Back to Portfolio
+          </a>
           <h1 className="text-4xl font-serif mb-8">Projects</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {projects.map((project) => {

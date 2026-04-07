@@ -38,6 +38,12 @@ export default async function Get2KnowPage() {
     <main>
       <Container>
         <article className="mb-32">
+          <a
+            href="/"
+            className="text-xs uppercase tracking-widest text-emerald-800 font-bold hover:underline"
+          >
+            ← Back to Portfolio
+          </a>
           <PostHeader
             title="Get2Know Game"
             coverImage="/assets/img/Project1_Get2Know2.png"

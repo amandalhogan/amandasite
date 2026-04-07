@@ -12,3 +12,5 @@ ogImage:
 
 ### The Design Process
 This project explores the intersection of **biomimicry** and systems engineering...
+
+![Flower CAD Render](/assets/img/Flower-CAD.png)
