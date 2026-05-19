@@ -9,13 +9,15 @@ export const metadata: Metadata = {
 
 const projects = [
   {
-    title: "Mechanical Lily",
-    href: "/projects/mechanical-lily",
-    image: "/assets/img/Project4_mech.png",
-    blurb: "Light-sensitive kinetic sculpture",
+    title: "Range: art and design",
+    href: "https://lying-look-30b.notion.site/A-s-Art-2c0028c5919880a7aa22ddd370c907ab?source=copy_link",
+    image: "/assets/img/range.jpg",
+    blurb:
+      "A mini art portfolio.",
+    external: true,
   },
   {
-    title: "NASA OSDR",
+    title: "Published briefs on human spaceflight",
     href: "/projects/nasa-osdr",
     image: "/assets/img/Project5_agent.jpg",
     blurb: "Microbiology in spaceflight technical brief",
@@ -36,6 +38,12 @@ const projects = [
     external: true,
   },
   {
+    title: "Mechanical Lily",
+    href: "/projects/mechanical-lily",
+    image: "/assets/img/Project4_mech.png",
+    blurb: "Light-sensitive kinetic sculpture",
+  },
+  {
     title: "Silly Compounds",
     href: "/projects/silly-compounds",
     image: "/assets/img/Project3_Silly2.png",
@@ -50,14 +58,6 @@ const projects = [
     blurb:
       "Playing around with agentic AI to create personal assistants",
     external: false,
-  },
-  {
-    title: "Range: art and design",
-    href: "https://lying-look-30b.notion.site/A-s-Art-2c0028c5919880a7aa22ddd370c907ab?source=copy_link",
-    image: "/assets/img/range.jpg",
-    blurb:
-      "Understanding how my many interests, including creative persuits, fit together.",
-    external: true,
   },
 ];
 
@@ -84,7 +84,7 @@ export default function ProjectsPage() {
                       className={
                         project.title === "Get2Know Game"
                           ? "w-full aspect-[4/3] max-h-56 object-cover object-center transition-transform duration-700 group-hover:scale-105"
-                          : "w-full aspect-[3/4] max-h-56 object-cover transition-transform duration-700 group-hover:scale-105"
+                          : "w-full aspect-[3/4] max-h-56 object-cover object-center transition-transform duration-700 group-hover:scale-105"
                       }
                     />
                   </div>

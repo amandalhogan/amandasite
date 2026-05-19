@@ -45,7 +45,9 @@ export default async function OpenAiApiAgentsPage() {
             date="2025-03-01"
             author={author}
           />
-          <PostBody content={content} />
+          <PostBody>
+            <div dangerouslySetInnerHTML={{ __html: content }} />
+          </PostBody>
         </article>
       </Container>
     </main>

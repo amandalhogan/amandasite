@@ -53,7 +53,9 @@ export default async function MechanicalLilyPage() {
             date="2025-05-20"
             author={author}
           />
-          <PostBody content={content} />
+          <PostBody>
+            <div dangerouslySetInnerHTML={{ __html: content }} />
+          </PostBody>
         </article>
       </Container>
     </main>

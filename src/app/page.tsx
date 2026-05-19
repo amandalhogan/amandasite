@@ -12,7 +12,7 @@ export default function Home() {
       detail: "Operations Engineer",
       link: "https://labric.co",
       linkLabel: "Company Site",
-      tags: ["Automation", "SaaS"],
+      tags: ["Automation", "Marketing"],
     },
     {
       period: "2024–2025",
@@ -99,21 +99,28 @@ export default function Home() {
 
       {/* 2. PROJECT GRID (Format.com vibe) */}
       <section className="max-w-5xl mx-auto px-6 py-20 rounded-t-[100px] overflow-hidden">
-        <h2 className="text-xs uppercase tracking-[0.3em] text-gray-400 mb-12">Selected Works</h2>
+        <h2 className="text-xs uppercase tracking-[0.3em] text-gray-400 mb-12">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           
-          {/* Project 1: Mechanical Lily */}
-          <Link href="/projects/mechanical-lily" className="group block">
+          {/* Project 1: Range */}
+          <a
+            href="https://lying-look-30b.notion.site/A-s-Art-2c0028c5919880a7aa22ddd370c907ab?source=copy_link"
+            target="_blank"
+            rel="noreferrer"
+            className="group block"
+          >
             <div className="overflow-hidden bg-gray-100 mb-4 rounded-sm">
               <img 
-                src="/assets/img/Project4_mech.png" 
-                alt="Mechanical Lily"
-                className="w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-105"
+                src="/assets/img/range.jpg" 
+                alt="Range: art and design"
+                className="w-full aspect-[3/4] object-cover object-center transition-transform duration-700 group-hover:scale-105"
               />
             </div>
-            <h3 className="text-xl font-medium">Mechanical Lily</h3>
-            <p className="text-gray-500 font-serif italic">Light-sensitive kinetic sculpture</p>
-          </Link>
+            <h3 className="text-xl font-medium">Range: art and design</h3>
+            <p className="text-gray-500 font-serif italic">
+              A mini art portfolio.
+            </p>
+          </a>
 
           {/* Project 2: NASA Research */}
           <Link href="/projects/nasa-osdr" className="group block md:mt-24">
@@ -121,10 +128,10 @@ export default function Home() {
               <img 
                 src="/assets/img/Project5_agent.jpg" 
                 alt="NASA Research"
-                className="w-full aspect-square object-cover transition-transform duration-700 group-hover:scale-105"
+                className="w-full aspect-square object-cover object-center transition-transform duration-700 group-hover:scale-105"
               />
             </div>
-            <h3 className="text-xl font-medium">NASA OSDR</h3>
+            <h3 className="text-xl font-medium">Published briefs on human spaceflight</h3>
             <p className="text-gray-500 font-serif italic">Microbiology in spaceflight technical brief</p>
           </Link>
 
@@ -154,7 +161,7 @@ export default function Home() {
               <img
                 src="/assets/img/Project2_DataViz2.jpg"
                 alt="Airline Data Viz"
-                className="w-full aspect-square object-cover transition-transform duration-700 group-hover:scale-105"
+                className="w-full aspect-square object-cover object-center transition-transform duration-700 group-hover:scale-105"
               />
             </div>
             <h3 className="text-xl font-medium">Airline Data Viz</h3>
@@ -181,7 +188,7 @@ export default function Home() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl font-serif mb-6">The Digital Garden</h2>
           <p className="text-gray-400 mb-12 leading-relaxed">
-            A collection of logs on carnivorous plants, oil painting, and the intersection of biology and space exploration.
+            Blog posts on plants, art, and lukewarm takes on the space industry.
           </p>
           
           {/* Link to your Posts */}

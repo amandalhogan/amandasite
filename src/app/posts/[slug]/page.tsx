@@ -6,7 +6,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import Container from "@/app/_components/container";
 import { PostBody } from "@/app/_components/post-body";
-import { PostHeader } from "@/app/_components/post-header";
+import { PostTitle } from "@/app/_components/post-title";
 
 export default async function Post(props: Params) {
   const params = await props.params;
@@ -26,12 +26,7 @@ export default async function Post(props: Params) {
           >
             ← Back to Logs
           </a>
-          <PostHeader
-            title={post.title}
-            coverImage={post.coverImage}
-            date={post.date}
-            author={post.author}
-          />
+          <PostTitle>{post.title}</PostTitle>
           <PostBody>
             <MDXRemote
               source={post.content || ""}

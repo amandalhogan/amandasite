@@ -3,7 +3,11 @@ import Link from "next/link";
 
 export default function PostsIndex() {
   // This function looks into your "_posts" folder and gets all the titles
-  const allPosts = getAllPosts();
+  const visibleSlugs = new Set([
+    "carnivorous-plant-society",
+    "mechanical-lily",
+  ]);
+  const allPosts = getAllPosts().filter((post) => visibleSlugs.has(post.slug));
 
   return (
     <main className="max-w-4xl mx-auto px-6 py-24 bg-[#fdfbf7] min-h-screen">
@@ -12,7 +16,7 @@ export default function PostsIndex() {
       </a>
       
       <h1 className="text-5xl font-serif mt-12 mb-4 text-gray-900">Garden Logs</h1>
-      <p className="text-gray-500 italic mb-16">Field notes on biology, space, and art.</p>
+      <p className="text-gray-500 italic mb-16">Blog posts on plants, art, and lukewarm takes on the space industry.</p>
 
       <div className="space-y-12">
         {allPosts.map((post) => (
