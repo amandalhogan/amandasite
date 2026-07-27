@@ -68,7 +68,7 @@ export default function ProjectsPage() {
         <section className="mb-32 pt-12">
           <a
             href="/"
-            className="text-xs uppercase tracking-widest text-emerald-800 font-bold hover:underline"
+            className="inline-block mb-6 text-xs uppercase tracking-widest text-emerald-800 font-bold hover:underline"
           >
             ← Back to Portfolio
           </a>
