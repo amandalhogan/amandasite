@@ -10,35 +10,36 @@ export default function PostsIndex() {
   const allPosts = getAllPosts().filter((post) => visibleSlugs.has(post.slug));
 
   return (
-    <main className="max-w-4xl mx-auto px-6 py-24 bg-[#fdfbf7] min-h-screen">
-      <a href="/" className="text-xs uppercase tracking-widest text-emerald-800 font-bold hover:underline">
-        ← Back to Portfolio
-      </a>
-      
-      <h1 className="text-5xl font-serif mt-12 mb-4 text-gray-900">Garden Logs</h1>
-      <p className="text-gray-500 italic mb-16">Blog posts on plants, art, and lukewarm takes on the space industry.</p>
+    <main className="min-h-screen bg-[#fdfbf7]">
+      <div className="max-w-4xl mx-auto px-6 py-24">
+        <a href="/" className="text-xs uppercase tracking-widest text-emerald-800 font-bold hover:underline">
+          ← Back to Portfolio
+        </a>
 
-      <div className="space-y-12">
-        {allPosts.map((post) => (
-          <article key={post.slug} className="border-b border-gray-100 pb-10">
-            <Link href={`/posts/${post.slug}`} className="group">
-              <h2 className="text-3xl font-medium group-hover:text-emerald-700 transition-colors">
-                {post.title}
-              </h2>
-              <p className="text-gray-600 mt-3 leading-relaxed">
-                {post.excerpt || "Read more about this project..."}
-              </p>
-              <div className="mt-4 flex items-center gap-4">
-                <span className="text-xs font-mono text-gray-400 uppercase tracking-tighter">
-                  {post.date}
-                </span>
-                <span className="text-emerald-600 text-sm group-hover:translate-x-1 transition-transform">
-                  Read Log →
-                </span>
-              </div>
-            </Link>
-          </article>
-        ))}
+        <h1 className="text-5xl font-serif mt-12 mb-16 text-gray-900">Posts</h1>
+
+        <div className="space-y-12">
+          {allPosts.map((post) => (
+            <article key={post.slug} className="border-b border-gray-100 pb-10">
+              <Link href={`/posts/${post.slug}`} className="group">
+                <h2 className="text-3xl font-medium group-hover:text-emerald-700 transition-colors">
+                  {post.title}
+                </h2>
+                <p className="text-gray-600 mt-3 leading-relaxed">
+                  {post.excerpt || "Read more about this project..."}
+                </p>
+                <div className="mt-4 flex items-center gap-4">
+                  <span className="text-xs font-mono text-gray-400 uppercase tracking-tighter">
+                    {post.date}
+                  </span>
+                  <span className="text-emerald-600 text-sm group-hover:translate-x-1 transition-transform">
+                    Read Log →
+                  </span>
+                </div>
+              </Link>
+            </article>
+          ))}
+        </div>
       </div>
     </main>
   );

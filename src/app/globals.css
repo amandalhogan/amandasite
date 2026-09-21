@@ -46,10 +46,6 @@
   float: right;
 }
 
-html {
-    scroll-behavior: smooth;
-  }
-  
   /* Custom selection color (Gardener Green) */
   ::selection {
     background: #065f46;

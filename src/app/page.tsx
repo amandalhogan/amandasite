@@ -186,9 +186,9 @@ export default function Home() {
       <section className="relative bg-[#0a0a0c] text-white py-32 px-6 mt-20 rounded-t-[100px] overflow-hidden">
         <Starfield />        
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-4xl font-serif mb-6">The Digital Garden</h2>
+          <h2 className="text-4xl font-serif mb-6">Digital Garden</h2>
           <p className="text-gray-400 mb-12 leading-relaxed">
-            Blog posts on plants, art, and lukewarm takes on the space industry.
+            Blog posts on plants, art, and space.
           </p>
           
           {/* Link to your Posts */}
@@ -196,7 +196,7 @@ export default function Home() {
         href="/posts" 
       className="inline-block border border-emerald-500 text-emerald-400 px-8 py-3 rounded-full hover:bg-emerald-500 hover:text-white transition-all font-medium"
     >
-      Open the Logs
+      Visit
     </a>
         </div>
       </section>
